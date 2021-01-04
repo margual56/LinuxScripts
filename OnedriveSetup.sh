@@ -1,5 +1,10 @@
 #!/bin/sh
 
+##############################################
+# Author: Marcos Gutiérrez Alonso		 	 #
+# Creation date: January 2021			 	 #
+##############################################
+
 # Install rclone if not installed already
 sudo pacman -S --needed --noconfirm rclone || exit $?
 

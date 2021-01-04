@@ -1,5 +1,10 @@
 #!/bin/sh
 
+##############################################
+# Author: Marcos Gutiérrez Alonso			 #
+# Creation date: January 2021				 #
+##############################################
+
 # Install the necessary packages (if not already installed)
 sudo pacman -S --needed --noconfirm git dkms
 

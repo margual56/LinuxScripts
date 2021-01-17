@@ -8,6 +8,7 @@
 # Reference: https://wiki.archlinux.org/index.php/PostgreSQL
 
 # Install postgresql
+echo Installing psql...
 	sudo pacman -S --needed --noconfirm postgresql
 
 # Set variables
@@ -17,19 +18,25 @@
 	locale_encoding="UTF-8"	# Recommended
 	username=$USER
 
+mkdir -p "$dblocation"
+
 # Change postgres user's password
-	echo "User 'postgres'\'s password:"
+echo "User postgres' password:"
 	sudo passwd postgres
 
 # Initialize the database
-	su postgres -c "initdb --locale=${locale_lang} -E ${locale_encoding} -D ${dblocation}"
+echo "Initializing PSQL database. Please enter postgres' password:"
+	su postgres -c "initdb --locale ${locale_lang} -E ${locale_encoding} -D ${dblocation}"
 
+	
 # Enable psql's service
+echo "Enable PSQL's service. Please enter sudo password:"
 	sudo systemctl enable --now postgresql.service
 
 # Create the psql user with the same name
-	su postgres -c "createuser --interactive -s -U ${username} ${username}"
-	su postgres -c "createdb ${username}"
+echo "Creating the user and database in postgres. Please enter postgres' password:"
+	su postgres -c "createuser --interactive -s $username"
+	su postgres -c "createdb $username"
 
 # Done! Connect to psql and exit
 	echo "Done!"

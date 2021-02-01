@@ -1,6 +1,9 @@
 # LinuxScripts
-A collection of useful scripts for linux
+[![GitHub issues](https://img.shields.io/github/issues/SantiMA10/CampusVirtualPlus.svg)](https://github.com/margual56/LinuxScripts/issues)
+[![GitHub forks](https://img.shields.io/github/forks/SantiMA10/CampusVirtualPlus.svg)](https://github.com/margual56/LinuxScripts/network)
+[![GitHub stars](https://img.shields.io/github/stars/SantiMA10/CampusVirtualPlus.svg)](https://github.com/margual56/LinuxScripts/stargazers)
 
+A collection of useful scripts for linux.
 
 ## Fear not
 All the scripts are supposed to be well documented both in the script itself and in [the Wiki](https://github.com/margual56/LinuxScripts/wiki) if needed.<br/>

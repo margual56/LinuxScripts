@@ -3,7 +3,10 @@
 [![GitHub forks](https://img.shields.io/github/forks/SantiMA10/CampusVirtualPlus.svg)](https://github.com/margual56/LinuxScripts/network)
 [![GitHub stars](https://img.shields.io/github/stars/SantiMA10/CampusVirtualPlus.svg)](https://github.com/margual56/LinuxScripts/stargazers)
 
-A collection of useful scripts for linux.
+<p>A collection of useful scripts for linux.</p>
+
+### Please check out [the Wiki pages](https://github.com/margual56/LinuxScripts/wiki). They contain most of the instructions and information.
+
 
 ## Fear not
 All the scripts are supposed to be well documented both in the script itself and in [the Wiki](https://github.com/margual56/LinuxScripts/wiki) if needed.<br/>
